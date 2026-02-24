@@ -3,284 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adriatica Salumi: eccellenza abruzzese nelle lavorazioni di carni suine dal 1992. Salsicce, spiedoni e rollè lavorati artigianalmente con suini 100% italiani.">
-    <meta name="keywords" content="Adriatica Salumi, carni suine, prodotti artigianali, Abruzzo, salsicce, spiedoni, rollè, carne italiana, qualità, tradizione">
+    <meta name="description" content="Adriatica Salumi: eccellenza abruzzese nelle lavorazioni di carni suine dal 1992. Salsicce, spiedoni e rollè lavorati artigianalmente.">
+    <meta name="keywords" content="Adriatica Salumi, carni suine fresche, lavorazione carni, Abruzzo, carne italiana, qualità, tradizione">
     <meta name="author" content="Adriatica Salumi srl">
-    <title>Adriatica Salumi </title>
+    <title>Adriatica Salumi | Raffinazione Carni Suine</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-bg">
-            <video autoplay muted loop>
-                <source src="vid/abruzzoMed.mp4" type="video/mp4">
-                <source src="vid/abruzzoMed.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="header-content">
-            <h1>Adriatica Salumi</h1>
-            <p>L'eccellenza abruzzese nella lavorazione di carni suine dal 1992</p>
+
+    <div class="tricolore-bar"></div>
+
+    <!-- Contenitore per il paesaggio Abruzzese disegnato -->
+    <div id="landscape-container"></div>
+
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <div class="badge"> Eccellenza abruzzese nella lavorazione di carni suine</div> 
+            <h1>Adriatica<br><span>Salumi</span></h1>
+            <p>Nelle colline Abruzzesi, tra il Gran Sasso e il mar Adriatico ci impegnamo a garantire la massima qualità. <br> Uniamo il rigore della selezione alla purezza della materia prima, esclusivamente fresca e italiana</p>
+            
         </div>
     </header>
-    
 
-
-    
-        <main class="main-content">
-            
-            <div class="storia-section">
-                <div class="storia-content slide-in-right">
-                    <h2>La Nostra Storia</h2>
-                    <p>Fondata nel 1992, Adriatica Salumi affonda le sue radici in una tradizione familiare che si tramanda da generazioni nel settore delle lavorazioni di carni suine. Situata nel cuore dell'Abruzzo, la nostra azienda coniuga sapientemente le forti tradizioni regionali con uno sguardo costante all'innovazione.</p>
-                    
-                    <p>La nostra filosofia è semplice ma potente: per ottenere un prodotto finale genuino e di alta qualità, è fondamentale partire da una materia prima eccellente. Per questo motivo, lavoriamo esclusivamente con carni provenienti da suini 100% italiani, garantendo tracciabilità, qualità e rispetto per le tradizioni gastronomiche del nostro territorio.</p>
-                </div>
-                
-                <!-- 
-                <div class="storia-image">
-                    <img src="img/tradizioni.png" alt="Tradizione Adriatica Salumi" >
-                </div> 
-                 -->
+    <div class="container" id="storia">
+        <!-- Sezione Storia -->
+        <section class="storia-section slide-up">
+            <div class="text-block">
+                <h2>La Nostra Storia</h2>
+                <p>Fondata nel 1992, Adriatica Salumi affonda le sue radici in una tradizione familiare che si tramanda da ben tre generazioni nel settore delle lavorazioni di carni suine. Situata nel cuore dell'Abruzzo, la nostra azienda coniuga sapientemente le forti tradizioni regionali con uno sguardo costante all'innovazione.</p>
+                <p>La nostra filosofia è semplice ma potente: per ottenere un prodotto finale genuino e di alta qualità, è fondamentale partire da una materia prima eccellente. Per questo motivo lavoriamo esclusivamente carni fresche provenienti da suini 100% italiani, garantendo <b>tracciabilità, qualità e rispetto per le tradizioni gastronomiche</b> del nostro territorio.</p>
             </div>
-        </main>
-        <main class="main-content">
+        </section>
 
-            <div class="feature">
-                <img src="img/it.png" alt="Suino italiano">
-                <div>
-                    <h3>100% Suino Italiano</h3>
-                    <p>La nostra promessa di qualità inizia dalla scelta: utilizziamo esclusivamente carni selezionate da suini allevati in Italia, garantendo tracciabilità completa e massima qualità in ogni prodotto.</p>
-                </div>
+        <!-- Sezione Features -->
+        <section class="features-grid">
+            <div class="feature-card slide-up">
+                <div class="feature-icon">I</div>
+                <h3>100% Suino Italiano</h3>
+                <p>La nostra promessa di qualità inizia dalla scelta: utilizziamo esclusivamente carni selezionate da suini allevati in Italia, garantendo tracciabilità completa.</p>
             </div>
-
-            <div class="feature">
-                <img src="img/tradizioni.png" alt="Icona tradizione">
-                <div>
-                    <h3>Tradizione e Innovazione</h3>
-                    <p>Rispettiamo profondamente la tradizione abruzzese nella lavorazione delle carni, ma siamo sempre alla ricerca di nuove tecniche e prodotti per soddisfare i gusti in evoluzione dei nostri clienti, mantenendo sempre intatta la qualità.</p>
-                </div>
+            <div class="feature-card slide-up" style="transition-delay: 0.1s;">
+                <div class="feature-icon">II</div>
+                <h3>Zero Compromessi</h3>
+                <p>Specializzati in carni fresche. La nostra carne viene lavorata con metodi che esaltano la qualità naturale, preservando il sapore genuino e la tenerezza.</p>
             </div>
+            <div class="feature-card slide-up" style="transition-delay: 0.2s;">
+                <div class="feature-icon">III</div>
+                <h3>Tradizione e Innovazione</h3>
+                <p>Rispettiamo la tradizione abruzzese, unendo l'esperienza artigianale maniacale con tecniche moderne per garantire il miglior prodotto possibile.</p>
+            </div>
+        </section>
 
-            <div class="product-section">
+        <!-- Sezione Prodotti -->
+        <section id="prodotti" class="product-section slide-up">
+            <div class="section-header">
                 <h2>I Nostri Prodotti</h2>
-                <p>Preferiamo concentrarci su una gamma selezionata di prodotti, lavorati con la massima cura e nel pieno rispetto della materia prima. Ogni creazione è il risultato di un processo attento che valorizza la tradizione abruzzese.</p>
+                <p>Preferiamo concentrarci su una gamma selezionata di prodotti, lavorati con la massima cura e nel pieno rispetto della materia prima. Tra i prodotti più famosi</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card" onclick="toggleProductDetails(this)">
+                    <div class="product-header">
+                        <h4>Salsiccia Classica</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <p class="product-preview">Preparata secondo la tradizione abruzzese con carni di prima scelta.</p>
+                    <div class="product-details">
+                        <div class="details-content">
+                            <div class="product-image-container">
+                                <img src="img/salsicce.png" alt="Salsiccia Classica">
+                            </div>
+                            <div class="product-info-text">
+                                <p>La nostra Salsiccia Classica è preparata secondo l'autentica tradizione abruzzese, utilizzando esclusivamente carni selezionate da suini 100% italiani. L'impasto è arricchito con un mix equilibrato di spezie che ne esaltano il sapore senza coprire la genuinità della carne.</p>
+                                <ul class="tech-list">
+                                    <li><strong>Ingredienti:</strong> Carne di suino 100% italiano, sale, una punta di spezie</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="product-grid">
-                    <div class="product-card" onclick="toggleProductDetails(this)">
-                        <img src="img/salsicce.png" alt="Salsiccia Classica">
-                        <div class="product-content">
-                            <h4>Salsiccia Classica</h4>
-                            <p class="product-preview">Preparata secondo la tradizione abruzzese con carni di prima scelta.</p>
-                        </div>
-                        <div class="product-details">
-                            <p>La nostra Salsiccia Classica è preparata secondo l'autentica tradizione abruzzese, utilizzando esclusivamente carni selezionate da suini 100% italiani. L'impasto è arricchito con un mix equilibrato di spezie che ne esaltano il sapore senza coprire la genuinità della carne.</p>
-                            <p>Ideale per la cottura alla griglia o in padella, si presta perfettamente anche per arricchire sughi e preparazioni in umido. Ogni morso racchiude il sapore autentico della tradizione abruzzese.</p>
-                            <ul>
-                                <li>Ingredienti: Carne di suino 100% italiano, sale, pepe, spezie</li>
-                                <li>Conservazione: Mantenere refrigerato tra 0° e 4°C</li>
-                                <li>Confezione: Disponibile in vaschette da 500g o 1kg</li>
-                            </ul>
+                <div class="product-card" onclick="toggleProductDetails(this)">
+                    <div class="product-header">
+                        <h4>Salsiccia Sale e Pepe</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <p class="product-preview">Una variante saporita con speziatura semplice ma d'effetto.</p>
+                    <div class="product-details">
+                        <div class="details-content">
+                            <div class="product-image-container">
+                                <img src="img/salsicceOasi.png" alt="Salsiccia Sale e Pepe">
+                            </div>
+                            <div class="product-info-text">
+                                <p>La Salsiccia Sale e Pepe è la scelta perfetta per chi ama i sapori puliti ed essenziali. Realizzata con tagli pregiati di carne suina italiana, viene aromatizzata semplicemente con sale marino e una generosa dose di pepe nero macinato fresco.</p>
+                                <ul class="tech-list">
+                                    <li><strong>Ingredienti:</strong> Carne di suino 100% italiano, sale marino, pepe nero</li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="product-card" onclick="toggleProductDetails(this)">
-                        <img src="img/salsicceOasi.png" alt="Salsiccia Sale e Pepe">
-                        <div class="product-content">
-                            <h4>Salsiccia Sale e Pepe</h4>
-                            <p class="product-preview">Una variante saporita con speziatura semplice ma d'effetto.</p>
-                        </div>
-                        <div class="product-details">
-                            <p>La Salsiccia Sale e Pepe è la scelta perfetta per chi ama i sapori puliti ed essenziali. Realizzata con tagli pregiati di carne suina italiana, viene aromatizzata semplicemente con sale marino e una generosa dose di pepe nero macinato fresco.</p>
-                            <p>Il risultato è un prodotto dal gusto deciso ma equilibrato, dove il sapore naturale della carne rimane protagonista assoluto, impreziosito dalla piccantezza del pepe.</p>
-                            <ul>
-                                <li>Ingredienti: Carne di suino 100% italiano, sale marino, pepe nero</li>
-                                <li>Conservazione: Mantenere refrigerato tra 0° e 4°C</li>
-                                <li>Confezione: Disponibile in vaschette da 500g o 1kg</li>
-                            </ul>
+                </div>
+
+                <div class="product-card" onclick="toggleProductDetails(this)">
+                    <div class="product-header">
+                        <h4>Spiedone</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <p class="product-preview">Tagliato e preparato a mano, ideale per le grigliate.</p>
+                    <div class="product-details">
+                        <div class="details-content">
+                            <div class="product-image-container">
+                                <img src="img/Spiedoni.png" alt="Spiedone">
+                            </div>
+                            <div class="product-info-text">
+                                <p>Il nostro Spiedone è un prodotto artigianale realizzato a mano dai nostri maestri macellai. Creiamo ogni pezzo selezionando attentamente tagli di carne suina fresca italiana, alternati con verdure di stagione e pancetta.</p>
+                                <ul class="tech-list">
+                                    <li><strong>Ingredienti:</strong> Pancetta, spalla e salsiccia di suino 100% italiano, alloro, sale, spezie</li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="product-card" onclick="toggleProductDetails(this)">
-                        <img src="img/Spiedoni.png" alt="Spiedone">
-                        <div class="product-content">
-                            <h4>Spiedone</h4>
-                            <p class="product-preview">Tagliato e preparato a mano, ideale per le grigliate.</p>
-                        </div>
-                        <div class="product-details">
-                            <p>Il nostro Spiedone è un prodotto artigianale realizzato a mano dai nostri maestri macellai. Creiamo ogni pezzo selezionando attentamente tagli di carne suina fresca italiana, alternati con verdure di stagione e pancetta.</p>
-                            <p>Lo Spiedone Adriatica è perfetto per grigliate in compagnia, facile da cuocere e sempre succoso. La marinatura leggera esalta il sapore naturale degli ingredienti senza coprirne le caratteristiche.</p>
-                            <ul>
-                                <li>Ingredienti: Carne di suino 100% italiano, pancetta, verdure di stagione, sale, erbe aromatiche</li>
-                                <li>Conservazione: Mantenere refrigerato tra 0° e 4°C</li>
-                                <li>Confezione: Disponibile in confezioni da 2 o 4 spiedoni</li>
-                            </ul>
-                        </div>
+                </div>
+
+                <div class="product-card" onclick="toggleProductDetails(this)">
+                    <div class="product-header">
+                        <h4>Rollè</h4>
+                        <span class="toggle-icon">+</span>
                     </div>
-                    
-                    <div class="product-card" onclick="toggleProductDetails(this)">
-                        <img src="img/rolle.png" alt="Rollè">
-                        <div class="product-content">
-                            <h4>Rollè</h4>
-                            <p class="product-preview">Arrotolato con cura e aromatizzato con erbe dell'Abruzzo.</p>
-                        </div>
-                        <div class="product-details">
-                            <p>Il Rollè Adriatica è un capolavoro della tradizione gastronomica abruzzese. Realizziamo ogni pezzo arrotolando sapientemente un taglio di carne suina pregiata farcita con un ripieno aromatizzato a base di erbe spontanee del nostro territorio.</p>
-                            <p>Il risultato è un prodotto versatile, perfetto sia per una cottura al forno che in padella. Al taglio rivela il suo interno succoso e profumato, ideale per occasioni speciali o per rendere unico un pranzo in famiglia.</p>
-                            <ul>
-                                <li>Ingredienti: Carne di suino 100% italiano, ripieno a base di erbe aromatiche abruzzesi, sale, spezie</li>
-                                <li>Conservazione: Mantenere refrigerato tra 0° e 4°C</li>
-                                <li>Confezione: Disponibile porzionato o intero</li>
-                            </ul>
+                    <p class="product-preview">Arrotolato con cura e aromatizzato con erbe dell'Abruzzo.</p>
+                    <div class="product-details">
+                        <div class="details-content">
+                            <div class="product-image-container">
+                                <img src="img/rolle.png" alt="Rollè">
+                            </div>
+                            <div class="product-info-text">
+                                <p>Il Rollè Adriatica è un capolavoro della tradizione gastronomica abruzzese. Realizziamo ogni pezzo arrotolando sapientemente un taglio di carne suina pregiata farcita con un ripieno aromatizzato a base di erbe spontanee del nostro territorio.</p>
+                                <ul class="tech-list">
+                                    <li><strong>Ingredienti:</strong> Suino 100% italiano, sale, spezie</li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-
-
-
-        <!-- Nuova sezione contatti -->
-    <div class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Contattaci</h2>
-                <p>Per scoprire i nostri prodotti puoi contattarci liberamente, saremo lieti di fornirti tutte le informazioni necessarie sulla nostra selezione di carni di qualità.</p>
-            </div>
-            <div class="contact-actions">
-                <a href="mailto:info@adriasal.it" class="email-button">
-                    <span class="icon">📧</span>
-                    Scrivici un'email
-                </a>
-            </div>
-        </div>
+        </section>
     </div>
 
-    <!-- Footer ridisegnato -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-info">
-                <div class="footer-col">
-                    <h3>Adriatica Salumi</h3>
-                    <p>L'eccellenza abruzzese nella lavorazione di carni suine dal 1992. La nostra filosofia si basa sulla qualità delle materie prime e sul rispetto delle tradizioni.</p>
+    <!-- Sezione Contatti -->
+    <section class="contact-section slide-up">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-text">
+                    <h2>Contattaci</h2>
+                    <p>Per scoprire i nostri prodotti puoi contattarci liberamente, saremo lieti di fornirti tutte le informazioni necessarie sulla nostra selezione di carni di qualità.</p>
+                    <a href="mailto:info@adriasal.it" class="cta-button outline">Scrivici un'email</a>
                 </div>
-                <div class="footer-col">
-                    <h3>Contatti</h3>
-                    <div class="contact-item">
-                        <span class="icon">📍</span>
-                        <span>Via Pascal 16, 64016 Sant'Egidio alla Vibrata (TE)</span>
+                <div class="contact-data">
+                    <div class="data-group">
+                        <h5>Sede</h5>
+                        <p>Via Pascal 16<br>64016 Sant'Egidio alla Vibrata (TE)<br>Abruzzo, Italia</p>
                     </div>
-                    <div class="contact-item">
-                        <span class="icon">📞</span>
-                        <span>Tel: 0861 842494</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📧</span>
-                        <span>Email: info@adriasal.it</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📝</span>
-                        <span>PEC: adriasal@pec.it</span>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Orari</h3>
-                    <div class="contact-item">
-                        <span class="icon">🕒</span>
-                        <span>Lunedì - Venerdì: 8:30 - 12:00, 14:30 - 16:00</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📅</span>
-                        <span>Sabato e Domenica: Chiuso</span>
+                    <div class="data-group">
+                        <h5>Recapiti & Orari</h5>
+                        <p>Tel: 0861 842494<br>Email: info@adriasal.it<br>Lun-Ven: 8:30-12:00, 14:30-16:00</p>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 Adriatica Salumi srl - P.IVA 00723510673 - Tutti i diritti riservati</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-flex">
+            <div class="brand">
+                <h4>Adriatica Salumi</h4>
+                <p>L'eccellenza abruzzese dal 1992.</p>
+            </div>
+            <div class="legal">
+                <p>&copy; 2023 Adriatica Salumi srl - P.IVA 00723510673</p>
+                <p>Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        function toggleProductDetails(element) {
-            // Ottieni tutti i product card
-            const allCards = document.querySelectorAll('.product-card');
-            
-            // Se l'elemento cliccato non ha già la classe active
-            if (!element.classList.contains('active')) {
-                // Rimuovi la classe active da tutti i card
-                allCards.forEach(card => {
-                    card.classList.remove('active');
-                });
-                
-                // Aggiungi la classe active all'elemento cliccato
-                element.classList.add('active');
-            } else {
-                // Se è già attivo, rimuovi la classe active
-                element.classList.remove('active');
-            }
-        }
-
-        // Aggiungi evento per mostrare il prodotto al passaggio del mouse (opzionale)
-        document.addEventListener('DOMContentLoaded', function() {
-            const productCards = document.querySelectorAll('.product-card');
-            
-            productCards.forEach(card => {
-                // Animazione al passaggio del mouse
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                    this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    if (!this.classList.contains('active')) {
-                        this.style.transform = 'translateY(0)';
-                        this.style.boxShadow = 'none';
-                    }
-                });
-            });
-        });
-
-
-
-// Funzione per verificare se un elemento è visibile nel viewport
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.9 && rect.bottom >= 0);
-        }
-
-        // Gestisce l'animazione degli elementi quando diventano visibili
-        function handleScrollAnimations() {
-            const elements = document.querySelectorAll('.slide-in-right, .slide-in-left');
-            
-            elements.forEach(element => {
-                if (isElementInViewport(element) && !element.classList.contains('appear')) {
-                element.classList.add('appear');
-                }
-            });
-        }
-
-        // Aggiungi l'evento scroll
-        window.addEventListener('scroll', handleScrollAnimations);
-        window.addEventListener('load', handleScrollAnimations);
-
-        // Inizializza le animazioni al caricamento della pagina
-        document.addEventListener('DOMContentLoaded', function() {
-        // Aggiungi le classi agli elementi da animare
-            const storiaSection = document.querySelector('.storia-content');
-            if (storiaSection) storiaSection.classList.add('slide-in-right');
-            
-            const features = document.querySelectorAll('.feature');
-            features.forEach(feature => {
-                feature.classList.add('slide-in-left');
-            });
-            
-            // Controlla subito se gli elementi sono visibili
-            handleScrollAnimations();
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
