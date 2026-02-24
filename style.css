@@ -247,6 +247,22 @@ p {
     padding: 4rem 0 8rem;
 }
 
+.features-grid::before {
+    content: "";
+    position: absolute;
+    top: 58%;
+    right: 10px;
+    /* Lo facciamo sbucare dal bordo */
+    width: 300px;
+    height: 300px;
+    background: url('favicon.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.25;
+    /* QUASI INVISIBILE - fondamentale per non essere invadente */
+    transform: translateY(-50%) rotate(-15deg);
+    pointer-events: none;
+}
+
 .feature-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -482,5 +498,26 @@ footer {
 
     .tech-list li strong {
         margin-bottom: 0.2rem;
+    }
+
+    .features-grid::before {
+        top: 64%;
+        /* Annulla la posizione dall'alto */
+        bottom: 0px;
+        /* Lo sposta ai piedi della sezione */
+        right: 50%;
+        /* Lo centra orizzontalmente */
+        transform: translateX(50%) rotate(-10deg);
+        /* Centratura precisa e rotazione più soft */
+        width: 180px;
+        /* Più piccolo su mobile */
+        height: 180px;
+        opacity: 0.1;
+        /* Molto discreto per non disturbare la lettura */
+    }
+
+    .features-grid {
+        padding-bottom: 120px;
+        /* Aggiunge spazio in fondo per ospitare il logo */
     }
 }
