@@ -354,6 +354,53 @@ p {
     display: none;
 }
 
+/* 1. Stato Base dell'Hamburger */
+.product-highlight {
+    border: 1px solid rgba(195, 163, 114, 0.5) !important;
+    background: linear-gradient(145deg, var(--bg-card) 0%, hsl(327, 78%, 36%) 150%) !important;
+    box-shadow: 0 0 15px rgba(195, 163, 114, 0.1);
+    transition: all 0.4s ease;
+}
+
+/* 2. Mouseover (Hover) - Il gradiente si accende */
+.product-highlight:hover {
+    background: linear-gradient(145deg, var(--bg-card) 0%, hsl(327, 80%, 43%) 120%) !important;
+    border-color: var(--accent-gold) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(195, 163, 114, 0.15);
+}
+
+/* 3. Stato Aperto (Active) - Mantiene il gradiente e rinforza il bordo */
+.product-highlight.active {
+    background: linear-gradient(145deg, var(--bg-surface) 0%, hsl(327, 80%, 35%) 110%) !important;
+    border-left: 4px solid var(--accent-gold) !important;
+    /* Bordo laterale più spesso */
+}
+
+/* Il Badge "Nuova Ricetta" accanto al titolo */
+.badge-new {
+    font-size: 0.65rem;
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #c3a372, #eed2a6);
+    /* Gradiente oro */
+    color: var(--bg-dark);
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Effetto quando la card dell'Hamburger è attiva */
+.product-highlight.active {
+    border-left: 3px solid #eed2a6 !important;
+    background: #25282a;
+}
+
 .product-details {
     max-height: 0;
     overflow: hidden;
@@ -501,9 +548,8 @@ footer {
     }
 
     .features-grid::before {
-        top: 64%;
-        /* Annulla la posizione dall'alto */
-        bottom: 0px;
+        top: 61%;
+        
         /* Lo sposta ai piedi della sezione */
         right: 50%;
         /* Lo centra orizzontalmente */
@@ -512,7 +558,7 @@ footer {
         width: 180px;
         /* Più piccolo su mobile */
         height: 180px;
-        opacity: 0.1;
+        opacity: 0.08;
         /* Molto discreto per non disturbare la lettura */
     }
 
